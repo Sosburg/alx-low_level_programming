@@ -1,29 +1,20 @@
 #include <stdio.h>
-
+#include <main.h>
 /**
- *main - A program that prints _putchar,
- *followed by a new line.
- *_putchar() - Records and returns a single character
- * c - is a character argument
+ * main - prints _putchar, followed by a new line
+ *
  * Return: Always 0
  */
-
-int _putchar(char c);
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
-	return (0);
-}
+	char word = "_putchar";
 
-int _putchar(char c)
-{
-	return (putchar(c));
+	while (word)
+	{
+		_putchar(word);
+		word++;
+	}
+	_putchar('\n');
+
+	return (0);
 }
