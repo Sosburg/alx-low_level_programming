@@ -6,7 +6,7 @@
 *    * @argv: An array of command-line argument strings
 *     *
 *      * Return: 0 on success
-*       */
+*/
 int main(int argc, char *argv[])
 {
 if (argc > 0)
