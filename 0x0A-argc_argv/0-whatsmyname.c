@@ -1,16 +1,19 @@
 #include <stdio.h>
 
 /**
- *  * print_program_name - Prints the name of the program
- *   * @name: Name of the program
- *    */
-void print_program_name(char *name)
+*  * main - Entry point
+*   * @argc: The number of command-line arguments
+*    * @argv: An array of command-line argument strings
+*     *
+*      * Return: 0 on success
+*       */
+int main(int argc, char *argv[])
 {
-	    /* Print the name of the program followed by a new line */
-	    while (*name != '\0')
-		        {
-				        _putchar(*name);
-					        name++;
-						    }
-	        _putchar('\n');
+if (argc > 0)
+{
+printf("%s\n", argv[0]);
+return (0);
+}
+
+return (1);
 }
