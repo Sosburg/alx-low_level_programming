@@ -33,7 +33,7 @@ if (new_dog->owner == NULL)
 free(new_dog->name);
 free(new_dog);
 return (NULL);
-free(new_dog->name);
+}
 
 return (new_dog);
 }
